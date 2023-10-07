@@ -78,3 +78,4 @@ kubectl apply -f argocd-core-applications.yaml
 
 ## Troubleshooting: 
 1. **SSO doesn't work:** Restart the DEX Server Deployment
+2. **Invalid certificate:** Try to register your SSL certificate at your cloud cert manager, ensure ArgoCD is deployed in insecure mode, and the nginx controller has ssl-passthrough enabled.
