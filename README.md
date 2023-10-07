@@ -1,5 +1,6 @@
 # ArgoCD Self Managed
 
+Please check my article first: https://medium.com/@andersondario/argocd-app-of-apps-a-gitops-approach-52b17a919a66
 
 ## How to install 
 1. Create a file called *argocd-install/values-gke.yaml* based on *argocd-install/values-gke.example.yaml*.
