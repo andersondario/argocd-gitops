@@ -1,0 +1,17 @@
+# apiVersion: argoproj.io/v1alpha1
+# kind: AppProject
+# metadata:
+#   name: apps-dev
+#   namespace: argocd
+# spec:
+#   description: Project containing all Dev resources
+#   sourceRepos:
+#   - '*'
+#   destinations:
+#   - namespace: '*'
+#     server: '## YOUR DEV CLUSTER ##'
+#   clusterResourceWhitelist:
+#   - group: '*'
+#     kind: '*'
+#   orphanedResources:
+#     warn: false

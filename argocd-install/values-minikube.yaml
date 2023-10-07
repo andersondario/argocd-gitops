@@ -1,0 +1,23 @@
+configs:
+  params: 
+    server.insecure: true
+  cm:
+    # Reference: https://docs.crossplane.io/v1.10/guides/argo-cd-crossplane/#configuring-argo-cd-with-crossplane
+    application.resourceTrackingMethod: annotations
+  
+  rbac: 
+    policy.default: role:readonly
+
+repoServer: 
+  autoscaling: 
+    enabled: false
+
+server:
+  autoscaling: 
+    enabled: false
+
+  service:
+    type: ClusterIP
+
+  ingress:
+    enabled: false

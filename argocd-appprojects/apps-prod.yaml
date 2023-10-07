@@ -1,0 +1,17 @@
+# apiVersion: argoproj.io/v1alpha1
+# kind: AppProject
+# metadata:
+#   name: apps-prod
+#   namespace: argocd
+# spec:
+#   description: Project containing all PROD resources
+#   sourceRepos:
+#   - '*'
+#   destinations:
+#   - namespace: '*'
+#     server: '## YOUR PROD CLUSTER ##'
+#   clusterResourceWhitelist:
+#   - group: '*'
+#     kind: '*'
+#   orphanedResources:
+#     warn: false
