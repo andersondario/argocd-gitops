@@ -10,10 +10,7 @@ Please check my article first: https://medium.com/@andersondario/argocd-app-of-a
 minikube start
 
 # If GKE, get the cluster credentials
-export CLUSTER_NAME="YOUR_CLUSTER_NAME"
-export CLUSTER_REGION="YOUR_CLUSTER_REGION"
-export GCP_PROJECT_ID="YOUR_GCP_PROJECT_ID"
-gcloud container clusters get-credentials $CLUSTER_NAME --region $CLUSTER_REGION --project $GCP_PROJECT_ID
+gcloud container clusters get-credentials YOUR_CLUSTER_NAME --region YOUR_CLUSTER_REGION --project YOUR_GCP_PROJECT_ID
 
 # Go to argocd-install folder
 cd argocd-install
@@ -79,4 +76,3 @@ kubectl apply -f argocd-core-applications.yaml
 
 ## Troubleshooting: 
 1. **SSO doesn't work:** Restart the DEX Server Deployment
-2. **Invalid certificate:** Try to register your SSL certificate at your cloud cert manager, ensure ArgoCD is deployed in insecure mode, and the nginx controller has ssl-passthrough enabled.
